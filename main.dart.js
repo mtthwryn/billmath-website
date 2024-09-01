@@ -74346,7 +74346,7 @@ $S:457}
 A.a2T.prototype={
 WT(a){$.aic().n(0,this,a)}}
 A.IT.prototype={
-J(a){return new A.wl(A.ap(["/",new A.a6P(),"/peopleInput",new A.a6Q(),"/inputOrders",new A.a6R(),"/result",new A.a6S()],t.N,t.Ab),"/","SplitLater",null)}}
+J(a){return new A.wl(A.ap(["/",new A.a6P(),"/peopleInput",new A.a6Q(),"/inputOrders",new A.a6R(),"/result",new A.a6S()],t.N,t.Ab),"/","BillMath",null)}}
 A.a6P.prototype={
 $1(a){return new A.pB(null)},
 $S:458}
