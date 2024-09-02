@@ -74532,7 +74532,7 @@ A.adE.prototype={
 $0(){return this.a.a5O(this.b)},
 $S:0}
 A.qo.prototype={
-J(a2){var s=null,r=t.a.a(A.pX(a2,t.X).b.b),q=t.vb.a(r.h(0,"orders")),p=A.bn(r.h(0,"serviceCharge")),o=A.bn(r.h(0,"tip")),n=A.bz(r.h(0,"payer")),m=t.b5.a(r.h(0,"people")),l=new A.Tc(q,p,o,n).a9B(),k=J.c8(q),j=k.ms(q,0,new A.a4Q()),i=j*(p/100),h=j+i+o,g=new A.a4N(m),f=A.SN(B.j,!0,0,s,A.aY("Summary",s,s,s,A.bh(s,s,B.Y,s,s,s,s,s,s,s,s,s,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s)),e=t.D,d=A.lh(A.b([A.aY("Payment Balance",s,s,s,A.bh(s,s,B.Y,s,s,s,s,s,s,s,s,20,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.G1(s,A.vB(B.DP,B.Y,s,s),s,new A.a4K(new A.a4L(n,h,l),a2),s,s)],e),B.as,B.j_,B.aA),c=A.bG(s,10,s),b=A.p0(g.$1(n),A.aY(n[0].toUpperCase(),s,s,s,A.bh(s,s,B.j,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)),a=A.aY(n,s,s,s,A.bh(s,s,B.aP,s,s,s,s,s,s,s,s,16,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s),a0=A.bh(s,s,B.aP,s,s,s,s,s,s,s,s,16,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),a1=B.c.a0(h,2)
+J(a2){var s=null,r=t.a.a(A.pX(a2,t.X).b.b),q=t.vb.a(r.h(0,"orders")),p=A.bn(r.h(0,"serviceCharge")),o=A.bn(r.h(0,"tip")),n=A.bz(r.h(0,"payer")),m=t.b5.a(r.h(0,"people")),l=new A.Tc(q,p,o,n).a9B(),k=J.c8(q),j=k.ms(q,0,new A.a4Q()),i=j*(p/100),h=j+i+o,g=new A.a4N(m),f=A.SN(B.j,!0,0,s,A.aY("Summary",s,s,s,A.bh(s,s,B.Y,s,s,s,s,s,s,s,s,s,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s)),e=t.D,d=A.lh(A.b([A.aY("Payment Balance",s,s,s,A.bh(s,s,B.Y,s,s,s,s,s,s,s,s,20,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.G1(s,A.vB(B.DP,B.Y,s,s),s,new A.a4K(new A.a4L(h,n,l),a2),s,s)],e),B.as,B.j_,B.aA),c=A.bG(s,10,s),b=A.p0(g.$1(n),A.aY(n[0].toUpperCase(),s,s,s,A.bh(s,s,B.j,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)),a=A.aY(n,s,s,s,A.bh(s,s,B.aP,s,s,s,s,s,s,s,s,16,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),s,s),a0=A.bh(s,s,B.aP,s,s,s,s,s,s,s,s,16,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),a1=B.c.a0(h,2)
 a0=A.b([d,c,A.kQ(b,s,a,A.ajQ(A.bT(A.b([A.bT(s,A.bh(s,s,B.lg,s,s,s,s,s,s,s,s,s,s,s,B.Z,s,s,!0,s,s,s,s,s,s,s,s),"$"+a1)],t.VO),a0,"paid "),s,s)),A.bG(s,16,s)],e)
 a1=t.l7
 B.b.R(a0,l.gfC().fI(0,new A.a4R(g),a1))
@@ -74560,16 +74560,19 @@ A.a4P.prototype={
 $0(){return A.ap(["color",B.fE],t.N,t.z)},
 $S:165}
 A.a4L.prototype={
-$0(){var s="Payment Balance:\n\n",r={}
-r.a=s
-r.a=s+(this.a+" paid $"+B.c.a0(this.b,2)+"\n")
+$0(){var s,r={},q="Total Bill: $"+B.c.a0(this.a,2)+"\n"
+r.a=q
+s=this.b
+q+="Paid By: "+s+"\n\n"
+r.a=q
+r.a=q+("Transfer to: "+s+"\n")
 this.c.af(0,new A.a4M(r))
 r=r.a+="\n"
 return r},
 $S:40}
 A.a4M.prototype={
 $2(a,b){var s=this.a
-s.a=s.a+(a+" owes $"+B.c.a0(b,2)+"\n")},
+s.a=s.a+(a+": $"+B.c.a0(b,2)+"\n")},
 $S:86}
 A.a4K.prototype={
 $0(){var s,r=null
