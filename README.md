@@ -1,5 +1,7 @@
 # BillMath Website
 
-## Versions
+## Versions (Public Launch)
 
-### Beta 
+## Versions (Beta)
+
+### v1.0 
